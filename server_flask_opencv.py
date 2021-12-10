@@ -29,7 +29,7 @@ def captureframe():
     while cap.isOpened():
         ret, frame = cap.read()
         # cv.imshow('webcam', frame)
-        #frame = cv.rotate(frame, cv.ROTATE_180)
+        frame = cv.rotate(frame, cv.ROTATE_180)
         video_frame = frame.copy()
         cv.waitKey(30)
         pass
